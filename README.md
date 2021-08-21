@@ -1,4 +1,4 @@
-fauria/lap
+lap
 ==========
 
 ![docker_logo](https://raw.githubusercontent.com/fauria/docker-lap/master/docker_139x115.png)

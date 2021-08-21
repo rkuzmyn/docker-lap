@@ -1,11 +1,7 @@
 lap
 ==========
 
-![docker_logo](https://raw.githubusercontent.com/fauria/docker-lap/master/docker_139x115.png)
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/fauria/lap.svg?style=plastic)](https://hub.docker.com/r/fauria/lap/)
-[![Docker Build Status](https://img.shields.io/docker/build/fauria/lap.svg?style=plastic)](https://hub.docker.com/r/fauria/lap/builds/)
-[![](https://images.microbadger.com/badges/image/fauria/lap.svg)](https://microbadger.com/images/fauria/lap "fauria/lap")
 
 This Docker container implements a LAP stack, as well as some popular PHP modules and a Postfix service to allow sending emails through PHP [mail()](http://php.net/manual/en/function.mail.php) function.
 
@@ -38,13 +34,13 @@ Includes the following components:
 
 Includes support for MongoDB and ImageMagick via PECL.
 
-Installation from [Docker registry hub](https://registry.hub.docker.com/r/fauria/lap/).
+Installation from [Docker registry hub](https://registry.hub.docker.com/r/kuzmyn1983/lap/).
 ----
 
 You can download the image using the following command:
 
 ```bash
-docker pull fauria/lap
+docker pull kuzmyn1983/lap
 ```
 
 Environment variables
@@ -99,17 +95,17 @@ Use cases
 1. Create a temporary container for testing purposes:
 
 ```
-	docker run --rm fauria/lap
+	docker run --rm kuzmyn1983/lap
 ```
 
 2. Create a temporary container to debug a web app:
 
 ```
-	docker run --rm -p 8080:80 -e LOG_STDOUT=true -e LOG_STDERR=true -e LOG_LEVEL=debug -v /my/data/directory:/var/www/html fauria/lap
+	docker run --rm -p 8080:80 -e LOG_STDOUT=true -e LOG_STDERR=true -e LOG_LEVEL=debug -v /my/data/directory:/var/www/html kuzmyn1983/lap
 ```
 
 3. Create a container linking to another [MySQL container](https://registry.hub.docker.com/_/mysql/):
 
 ```
-	docker run -d --link my-mysql-container:mysql -p 8080:80 -v /my/data/directory:/var/www/html -v /my/logs/directory:/var/log/httpd --name my-lap-container fauria/lap
+	docker run -d --link my-mysql-container:mysql -p 8080:80 -v /my/data/directory:/var/www/html -v /my/logs/directory:/var/log/httpd --name my-lap-container kuzmyn1983/lap
 ```

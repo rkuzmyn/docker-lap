@@ -31,8 +31,8 @@ cat << EOB
 
     **********************************************
     *                                            *
-    *    Docker image: fauria/lap                *
-    *    https://github.com/fauria/docker-lap    *
+    *    Docker image: kuzmyn1983/lap                *
+    *    https://github.com/rkuzmyn/docker-lap    *
     *                                            *
     **********************************************
 

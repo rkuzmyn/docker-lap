@@ -1,8 +1,8 @@
 FROM centos:7
-MAINTAINER Fer Uria <fauria@gmail.com>
+MAINTAINER lex
 LABEL Description="Linux + Apache 2.4 + PHP 5.4. CentOS 7 based. Includes .htaccess support and popular PHP5 features, including mail() function." \
 	License="Apache License 2.0" \
-	Usage="docker run -d -p [HOST PORT NUMBER]:80 -v [HOST WWW DOCUMENT ROOT]:/var/www/html fauria/lap" \
+	Usage="docker run -d -p [HOST PORT NUMBER]:80 -v [HOST WWW DOCUMENT ROOT]:/var/www/html rkuzmyn/lap" \
 	Version="1.0"
 
 RUN yum -y update && yum clean all

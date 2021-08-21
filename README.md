@@ -1,11 +1,15 @@
 lap
 ==========
+![docker_logo](https://raw.githubusercontent.com/rkuzmyn/docker-lap/master/docker_139x115.png)
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/rkuzmyn/lap.svg?style=plastic)](https://hub.docker.com/r/kuzmyn1983/lap-server/)
+[![Docker Build Status](https://img.shields.io/docker/build/kuzmyn1983/lap.svg?style=plastic)](https://hub.docker.com/r/kuzmyn1983/lap-server/builds/)
+[![](https://images.microbadger.com/badges/image/rkuzmyn/lap-server.svg)](https://microbadger.com/images/rkuzmyn/lap-server "rkuzmyn/lap-server")
 
 
 This Docker container implements a LAP stack, as well as some popular PHP modules and a Postfix service to allow sending emails through PHP [mail()](http://php.net/manual/en/function.mail.php) function.
 
-If you are looking for a modern, developer friendly container for your latest app, maybe [docker-lamp](https://github.com/rkuzmyn/docker-lamp) suits your needs better.
+If you are looking for a modern, developer friendly container for your latest app, maybe [docker-lap](https://github.com/rkuzmyn/docker-lap) suits your needs better.
 
 Includes the following components:
 
